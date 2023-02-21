@@ -1,0 +1,6 @@
+#ifndef ASTEROID_H_INCLUDED
+#define ASTEROID_H_INCLUDED
+
+
+
+#endif // ASTEROID_H_INCLUDED

@@ -51,6 +51,14 @@
 		<Linker>
 			<Add directory="C:/SFML-2.5.1/lib" />
 		</Linker>
+		<Unit filename="headers/Asteroid.h" />
+		<Unit filename="headers/Bullet.h" />
+		<Unit filename="headers/Collider.h" />
+		<Unit filename="headers/Inputs.h" />
+		<Unit filename="headers/Main.h" />
+		<Unit filename="headers/MainMenu.h" />
+		<Unit filename="headers/Physics.h" />
+		<Unit filename="headers/Player.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

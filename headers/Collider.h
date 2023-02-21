@@ -1,0 +1,6 @@
+#ifndef COLLIDER_H_INCLUDED
+#define COLLIDER_H_INCLUDED
+
+
+
+#endif // COLLIDER_H_INCLUDED
