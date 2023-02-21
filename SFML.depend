@@ -1512,6 +1512,19 @@
 	<SFML/Graphics.hpp>
 	"Collider.h"
 
-1676979998 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
+1676983165 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
 	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+	"MainMenu.h"
+
+1676983131 c:\users\krzysztof\documents\github\sojuz-53\mainmenu.h
+	"Main.h"
+
+1676486939 source:c:\users\krzysztof\documents\github\sojuz-53\mainmenu.cpp
+	"MainMenu.h"
+
+1676983095 c:\users\krzysztof\documents\github\sojuz-53\main.h
+	"SFML/Graphics.hpp"
+	<iostream>
 
