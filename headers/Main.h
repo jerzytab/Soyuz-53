@@ -2,9 +2,17 @@
 
 #include "SFML/Graphics.hpp"
 #include <iostream>
+#include <time.h>
+#include <list>
+#include <math.h>
 
 using namespace std;
 using namespace sf;
+
+const int W = 1200;
+const int H = 800;
+
+float DEGTORAD = 0.017453f;
 
 #define MAX_NUMBER_OF_ITEMS 4
 
@@ -29,3 +37,4 @@ private:
 	Text mainMenu[MAX_NUMBER_OF_ITEMS];
 
 };
+

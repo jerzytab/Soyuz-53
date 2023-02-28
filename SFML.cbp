@@ -59,6 +59,13 @@
 		<Unit filename="MainMenu.h" />
 		<Unit filename="Physics.h" />
 		<Unit filename="Player.h" />
+		<Unit filename="headers/Animation.h" />
+		<Unit filename="headers/Asteroid.h" />
+		<Unit filename="headers/Bullet.h" />
+		<Unit filename="headers/Collider.h" />
+		<Unit filename="headers/Main.h" />
+		<Unit filename="headers/MainMenu.h" />
+		<Unit filename="headers/Player.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
