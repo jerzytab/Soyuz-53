@@ -1512,7 +1512,7 @@
 	<SFML/Graphics.hpp>
 	"Collider.h"
 
-1677783495 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
+1677785840 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>

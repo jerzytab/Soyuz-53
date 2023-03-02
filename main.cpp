@@ -21,6 +21,10 @@ int main()
     MainMenu menu(window.getSize().x, window.getSize().y);
     window.setMouseCursorVisible(false);
 
+    Image icon;
+    icon.loadFromFile("images/logo.png");
+    window.setIcon(32, 32, icon.getPixelsPtr());
+
     RectangleShape background;
     background.setSize(Vector2f(960, 720));
     Texture Maintexture;
