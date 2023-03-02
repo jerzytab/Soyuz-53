@@ -1512,7 +1512,7 @@
 	<SFML/Graphics.hpp>
 	"Collider.h"
 
-1677527471 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
+1677783495 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
@@ -1539,7 +1539,7 @@
 1677513271 c:\users\krzysztof\documents\github\sojuz-53\headers\mainmenu.h
 	"Main.h"
 
-1677525150 c:\users\krzysztof\documents\github\sojuz-53\headers\main.h
+1677782524 c:\users\krzysztof\documents\github\sojuz-53\headers\main.h
 	"SFML/Graphics.hpp"
 	<iostream>
 	<time.h>
@@ -1581,7 +1581,7 @@
 	<list>
 	<math.h>
 
-1677525146 c:\users\krzysztof\documents\github\sojuz-53\headers\bullet.h
+1677616161 c:\users\krzysztof\documents\github\sojuz-53\headers\bullet.h
 	"SFML/Graphics.hpp"
 	"Main.h"
 	"Asteroid.h"
