@@ -5,6 +5,7 @@
 #include <list>
 #include <math.h>
 #include <sstream>
+#include <stdlib.h>
 
 #include "headers/MainMenu.h"
 #include "headers/Main.h"
@@ -38,10 +39,21 @@ int main()
     spacecraft.loadFromFile("images/spaceship/space2.png");
     t1.setTexture(&spacecraft);
 
-    asteroid1.loadFromFile("images/asteroids/asteroid3.png");
-    t4.setTexture(&asteroid1);
-
     t5.loadFromFile("images/spaceship/fire_balls1.png");
+
+    int costium = rand() % 3 + 1;
+    if(costium == 1)
+    {
+        asteroid1.loadFromFile("images/asteroids/asteroid3.png");
+    }
+    else if (costium == 2)
+    {
+        asteroid1.loadFromFile("images/asteroids/asteroid4.png");
+    }
+    else {
+        asteroid1.loadFromFile("images/asteroids/asteroid5.png");
+    }
+    t4.setTexture(&asteroid1);
 
     asteroid2.loadFromFile("images/asteroids/asteroid6.png");
     t6.setTexture(&asteroid2);
@@ -185,6 +197,20 @@ int main()
                                             b->life = false;
 
                                             bangLarge.play();
+
+                                            costium = rand() % 3 + 1;
+                                            if(costium == 1)
+                                            {
+                                                asteroid2.loadFromFile("images/asteroids/asteroid6.png");
+                                            }
+                                            else if (costium == 2)
+                                            {
+                                                asteroid2.loadFromFile("images/asteroids/asteroid7.png");
+                                            }
+                                            else {
+                                                asteroid2.loadFromFile("images/asteroids/asteroid8.png");
+                                            }
+                                            t6.setTexture(&asteroid2);
 
                                             score += 10;
                                             score_screen.str("");
