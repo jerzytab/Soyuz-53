@@ -13,6 +13,7 @@
 #include "headers/Collider.h"
 #include "headers/Bullet.h"
 #include "headers/Asteroid.h"
+#include "headers/Leaderboard.h"
 
 using namespace std;
 using namespace sf;
@@ -95,8 +96,8 @@ int main()
                 case Keyboard::Return:
                     RenderWindow Play(VideoMode(W, H), "Sputnik 53", Style::Fullscreen);
                     Play.setFramerateLimit(60);
+                    RenderWindow LEADERBOARD(VideoMode(960, 720), "LEADERBOARD");
                     RenderWindow OPTIONS(VideoMode(960, 720), "OPTIONS");
-                    RenderWindow ABOUT(VideoMode(960, 720), "LEADERBOARD");
 
                     if (Play.isOpen())
                     {
@@ -105,7 +106,7 @@ int main()
 
                     srand(time(0));
 
-                    std::list<Entity *> entities;
+                    list<Entity *> entities;
 
                     // Generowanie asteroid tj max size(15)
                     for (int i = 0; i < 5; i++)
@@ -239,17 +240,6 @@ int main()
                                         }
                                 }
 
-                            if (p->thrust)
-                                p->anim = sPlayer_go;
-                            else
-                                p->anim = sPlayer;
-
-                            // Elsplozja statku
-                            for (auto e : entities)
-                                if (e->name == "explosion")
-                                    if (e->anim.isEnd())
-                                        e->life = 0;
-
                             if (rand() % 150 == 0)
                             {
                                 asteroid *a = new asteroid();
@@ -279,8 +269,8 @@ int main()
                                     i++;
                             }
 
+                            LEADERBOARD.close();
                             OPTIONS.close();
-                            ABOUT.close();
                             Play.clear();
                             for (auto i : entities)
                                 i->draw(Play);
@@ -290,6 +280,30 @@ int main()
                         }
                         break;
                     case 1:
+                        while (LEADERBOARD.isOpen())
+                        {
+                            Event aevent;
+                            while (LEADERBOARD.pollEvent(aevent))
+                            {
+                                if (aevent.type == Event::Closed)
+                                {
+                                    LEADERBOARD.close();
+                                }
+                                if (aevent.type == Event::KeyPressed)
+                                {
+                                    if (aevent.key.code == Keyboard::Escape)
+                                    {
+                                        LEADERBOARD.close();
+                                    }
+                                }
+                            }
+                            Play.close();
+                            LEADERBOARD.clear();
+                            OPTIONS.close();
+                            LEADERBOARD.display();
+                        }
+                        break;
+                    case 2:
                         while (OPTIONS.isOpen())
                         {
                             Event aevent;
@@ -308,33 +322,9 @@ int main()
                                 }
                             }
                             Play.close();
+                            LEADERBOARD.close();
                             OPTIONS.clear();
-                            ABOUT.close();
                             OPTIONS.display();
-                        }
-                        break;
-                    case 2:
-                        while (ABOUT.isOpen())
-                        {
-                            Event aevent;
-                            while (ABOUT.pollEvent(aevent))
-                            {
-                                if (aevent.type == Event::Closed)
-                                {
-                                    ABOUT.close();
-                                }
-                                if (aevent.type == Event::KeyPressed)
-                                {
-                                    if (aevent.key.code == Keyboard::Escape)
-                                    {
-                                        ABOUT.close();
-                                    }
-                                }
-                            }
-                            Play.close();
-                            OPTIONS.clear();
-                            ABOUT.clear();
-                            ABOUT.display();
                         }
                         break;
                     case 3:

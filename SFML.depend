@@ -1512,7 +1512,7 @@
 	<SFML/Graphics.hpp>
 	"Collider.h"
 
-1677871012 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
+1677877578 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
@@ -1527,6 +1527,7 @@
 	"headers/Collider.h"
 	"headers/Bullet.h"
 	"headers/Asteroid.h"
+	"headers/Leaderboard.h"
 
 1676983131 c:\users\krzysztof\documents\github\sojuz-53\mainmenu.h
 	"Main.h"
@@ -1538,15 +1539,17 @@
 	"SFML/Graphics.hpp"
 	<iostream>
 
-1677513271 c:\users\krzysztof\documents\github\sojuz-53\headers\mainmenu.h
+1677878099 c:\users\krzysztof\documents\github\sojuz-53\headers\mainmenu.h
 	"Main.h"
 
-1677782524 c:\users\krzysztof\documents\github\sojuz-53\headers\main.h
+1677877721 c:\users\krzysztof\documents\github\sojuz-53\headers\main.h
 	"SFML/Graphics.hpp"
 	<iostream>
 	<time.h>
 	<list>
 	<math.h>
+	<fstream>
+	<vector>
 
 1677517577 c:\users\krzysztof\documents\github\sojuz-53\headers\player.h
 	"SFML/Graphics.hpp"
@@ -1566,7 +1569,7 @@
 	<math.h>
 	"Animation.h"
 
-1677525822 c:\users\krzysztof\documents\github\sojuz-53\headers\animation.h
+1677876130 c:\users\krzysztof\documents\github\sojuz-53\headers\animation.h
 	"SFML/Graphics.hpp"
 	"Main.h"
 	<time.h>
@@ -1591,4 +1594,6 @@
 	<time.h>
 	<list>
 	<math.h>
+
+1677878542 c:\users\krzysztof\documents\github\sojuz-53\headers\leaderboard.h
 

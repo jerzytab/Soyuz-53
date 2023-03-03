@@ -63,6 +63,7 @@
 		<Unit filename="headers/Asteroid.h" />
 		<Unit filename="headers/Bullet.h" />
 		<Unit filename="headers/Collider.h" />
+		<Unit filename="headers/Leaderboard.h" />
 		<Unit filename="headers/Main.h" />
 		<Unit filename="headers/MainMenu.h" />
 		<Unit filename="headers/Player.h" />

@@ -5,6 +5,8 @@
 #include <time.h>
 #include <list>
 #include <math.h>
+#include <fstream>
+#include <vector>
 
 using namespace std;
 using namespace sf;
