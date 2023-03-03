@@ -4,6 +4,7 @@
 #include <time.h>
 #include <list>
 #include <math.h>
+#include <sstream>
 
 #include "headers/MainMenu.h"
 #include "headers/Main.h"
@@ -107,6 +108,22 @@ int main()
                     p->settings(sPlayer, 200, 200, 0, 20);
                     entities.push_back(p);
 
+                    int score = 0;
+
+                    ostringstream score_screen;
+                    score_screen << "Score: " << score;
+
+                    Font score_font;
+                    if (!score_font.loadFromFile("fonts/TrenchThin.ttf"))
+                    {
+                        cout << "No font is here";
+                    }
+
+                    Text text;
+                    text.setFont(score_font);
+                    text.setString(score_screen.str());
+                    text.setCharacterSize(40);
+
                     switch (menu.GetPressedItem())
                     {
                     case 0:
@@ -169,6 +186,11 @@ int main()
 
                                             bangLarge.play();
 
+                                            score += 10;
+                                            score_screen.str("");
+                                            score_screen << "Score: " << score;
+                                            text.setString(score_screen.str());
+
                                             for (int i = 0; i < 2; i++)
                                             {
                                                 if (a->R == 15)
@@ -218,6 +240,12 @@ int main()
                                 if (e->life == false)
                                 {
                                     bangSmall.play();
+
+                                    score += 5;
+                                    score_screen.str("");
+                                    score_screen << "Score: " << score;
+                                    text.setString(score_screen.str());
+
                                     i = entities.erase(i);
                                     delete e;
                                 }
@@ -230,6 +258,7 @@ int main()
                             Play.clear();
                             for (auto i : entities)
                                 i->draw(Play);
+                            Play.draw(text);
                             Play.display();
                             music.play();
                         }

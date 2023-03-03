@@ -1512,13 +1512,14 @@
 	<SFML/Graphics.hpp>
 	"Collider.h"
 
-1677785840 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
+1677868442 source:c:\users\krzysztof\documents\github\sojuz-53\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
 	<time.h>
 	<list>
 	<math.h>
+	<sstream>
 	"headers/MainMenu.h"
 	"headers/Main.h"
 	"headers/Player.h"
